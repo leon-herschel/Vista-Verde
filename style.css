@@ -20,7 +20,6 @@ body {
 	list-style-type: none;
 	margin: 0;
 	padding: 20px;
-  margin-right: 100px;
 	float: right;
 }
 
@@ -30,12 +29,23 @@ body {
   font-weight: bold;
 }
 
+.navbar ul li:last-child {
+  margin-left: -10px;
+  vertical-align: middle;
+}
+
 .navbar a {
 	display: block;
 	padding: 10px;
 	color: #000000;
 	text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+.navbar img.fb-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
 
 .home-img {
@@ -70,6 +80,7 @@ body {
   height: 60px;
   font-size: 100%;
   font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
 }
 
 .book-now:active {
@@ -80,11 +91,17 @@ body {
   .navbar ul {
     padding: 0;
     text-align:end;
+    margin-right: 100px;
     float: none;
   }
   
   .navbar li {
     margin: 10px 0;
+  }
+
+  .navbar ul li:last-child {
+    margin-left: 10px;
+    
   }
 
   .navbar img {
@@ -133,6 +150,7 @@ body {
 }
 
 .left-side2 p {
+  text-align: justify;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 250px;
   

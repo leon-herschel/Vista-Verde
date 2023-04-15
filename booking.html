@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Verde</title>
+    <link rel="stylesheet" type="text/css" href="booking-page.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="img/logo.png" alt="Vista Verde Logo" />
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li>
+          <a
+            href="https://www.facebook.com/vistaverdeconsolacion"
+            target="_blank"
+            ><img
+              img
+              class="fb-icon"
+              src="img/fb-icon2.png"
+              alt="Facebook Icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="box">
+        <div class="form">
+          <div class="full-name">
+            <label for="full-name">FULL NAME</label>
+            <input type="text" required />
+          </div>
+          <div class="phone-number">
+            <label for="phone-number">PHONE NUMBER</label>
+            <div class="phone-number-input">
+              <span class="phone-prefix">+63</span>
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+          </div>
+          <div class="number-fields">
+            <div class="number-of-children">
+              <label for="number-of-children">NO. OF CHILDREN</label>
+              <input
+                type="number"
+                name="number-of-children"
+                min="0"
+                value="0"
+              />
+            </div>
+            <div class="number-of-adults">
+              <label for="number-of-adults">NO. OF ADULTS</label>
+              <input type="number" name="number-of-adults" min="0" value="0" />
+            </div>
+          </div>
+          <div class="date">
+            <label for="date">SELECT DATE</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="book-now">
+            <a href="booking.html"><button type="submit">BOOK NOW</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
