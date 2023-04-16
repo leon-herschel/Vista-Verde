@@ -44,6 +44,11 @@ body {
       color: #000000;
       text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar a:hover {
+    transform: scale(1.1);
   }
   
   .navbar img.fb-icon {
