@@ -106,34 +106,42 @@ body {
     background-color: #555;
   }
 
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .navbar li {
+      margin-left: 20px;
+    }
+  }
+  
   @media (max-width: 600px) {
+    .navbar{
+      height: 55px;
+    }
+  
+    .logo{
+      display: none;
+    }
+  
     .navbar ul {
       padding: 0;
-      text-align:end;
-      margin-right: 100px;
       float: none;
     }
     
     .navbar li {
-      margin: 10px 0;
+      margin: 20px 0;
     }
   
     .navbar ul li:last-child {
-      margin-left: 10px;
-      
-    }
-  
-    .navbar img {
-      display: block; 
-      margin: 0 auto; 
+      margin-left: 38%;
     }
   
   }
   
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .navbar li {
-      margin-left: 20px;
+  
+  @media (max-width: 420px) {
+    .navbar ul li:last-child {
+      margin-left: 15%;
     }
+  
   }
 
   
