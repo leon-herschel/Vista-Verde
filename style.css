@@ -11,8 +11,13 @@ body {
 }
 
 .navbar {
+  position: fixed;
 	background-color: #ffffff;
 	padding: 10px;
+  z-index: 999;
+  width: 100%;
+  height: 55px;
+  opacity: 0.9;
 }
 
 .navbar img {
@@ -68,7 +73,7 @@ body {
 
 .center-logo {
   position: absolute;
-  top: 45%; 
+  top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); /* Center the logo horizontally and vertically */
   width: 600px;
@@ -79,7 +84,7 @@ body {
 .book-now {
   position: absolute;
   border: none;
-  bottom: 20px;
+  bottom: 90px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
@@ -158,7 +163,7 @@ body {
 .second-page {
   background-color: #efede7;
   position: relative;
-  
+  height: 120vh;
 }
 
 .container2 {
@@ -186,7 +191,8 @@ body {
   margin-right: 100px;
   margin-bottom: 250px;
   font-family: 'Libre Baskerville', serif;
-  
+  line-height: 35px;
+  color: #014b3b;
 }
 
 .right-side2 {
@@ -207,11 +213,21 @@ body {
 .right-side2 p {
   text-align: center;
   margin-left: 40px;
-  font-size: 15px;
   font-family: 'Libre Baskerville', serif;
+  line-height: 35px;
+  color: #014b3b;
+}
+
+@media (max-width: 1000px) {
+  .second-page {
+    height: 200vh;
+  }
 }
 
 @media (max-width: 768px) {
+  .second-page {
+    height: 180vh;
+  }
   .container2 {
     flex-direction: column;
   }
@@ -225,7 +241,6 @@ body {
   .left-side2 p {
     margin-bottom: 0;
     margin-right: 0;
-    
   }
   
   .right-side2 img {
@@ -261,6 +276,7 @@ body {
     margin-top: 0;
     margin-left: 40px;
   }
+
 }
 
 
@@ -289,14 +305,15 @@ body {
   max-width: 100%;
   height: auto;
   margin-left: 100px;
-  margin-bottom: 40%;
+  margin-bottom: 5%;
 }
 
 .left-side3 p {
   text-align: center;
-  font-size: 15px;
   font-family: 'Libre Baskerville', serif;
-  margin: 10px 50px;
+  line-height: 30px;
+  margin: 10px 20px;
+  color: #014b3b;
 }
 
 .container3 {
@@ -433,12 +450,24 @@ body {
   margin-bottom: 10px;
 }
 
-.image-description, .price-description {
+.image-description {
   font-size: 1.2rem;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  color: #014b3b;
+  font-weight: bold;
+}
+
+ .price-description {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  color: #014b3b;
+  font-weight: bold;
 }
 
 .bottom-description {
