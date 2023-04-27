@@ -69,8 +69,11 @@ body {
       margin-left: 20px;
     }
   }
-
   @media (max-width: 900px) {
+    .accomodate, .facility, .direction {
+      display: none !important;
+    }
+  
     .navbar img{
       width: 140px;
       margin-top: -6px;
@@ -96,18 +99,17 @@ body {
     }
   
     .navbar ul li:last-child {
-      margin-left: 38%;
+      margin-left: 50%;
     }
-  
   }
   
   
   @media (max-width: 420px) {
     .navbar ul li:last-child {
-      margin-left: 15%;
+      margin-left: 30%;
     }
-  
   }
+    
   
 
 
@@ -379,3 +381,14 @@ body {
             width: 100%;
           }
         }
+
+
+        footer {
+          font-family: "Montserrat", sans-serif;
+          background-color: #fff;
+          color: #000;
+          font-size: 18px;
+          opacity: 0.8;
+        }
+
+        
