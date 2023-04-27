@@ -494,6 +494,11 @@ body {
   height: auto;
   margin-bottom: 10px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: all .5s ease-in-out;
+}
+
+.image-container:hover img{
+  transform: scale(1.1);
 }
 
 .image-description {
